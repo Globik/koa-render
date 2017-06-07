@@ -1,0 +1,39 @@
+{
+  "name": "koa-render.js example",
+  "version": "0.0.0",
+  "description": "es6 template rendering",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test"
+  },
+"engines":{
+"node":">=6.0.0"
+},
+"dependencies":{
+"koa":">=2.0.0",
+"koa-static":"3.0.0",
+"koa-router":"7.2.0",
+"koa-render":"0.0.0",
+"koa-body":"2.0.1"
+},
+"devDepenencies":{
+"reloadjs":"0.0.2"},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Globik/koa-render.git"
+  },
+  "keywords": [
+    "es6",
+    "template",
+    "literals",
+    "koa.js",
+    "template",
+    "engine"
+  ],
+  "author": "Globalik Slivov <globalikslivov@gmail.com> (https://github.com/Globik)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Globik/koa-render/issues"
+  },
+  "homepage": "https://github.com/Globik/koa-render#readme"
+}

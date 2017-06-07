@@ -1,0 +1,33 @@
+{
+  "name": "koa-render",
+  "version": "0.0.0",
+  "description": "Light-weight template engine for koa.js based on ES6 template literals",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+"engines":{
+"node":">=6.0.0"
+},
+"dependencies":{},
+"devDepenencies":{
+"reloadjs":"0.0.2"},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Globik/koa-render.git"
+  },
+  "keywords": [
+    "es6",
+    "template",
+    "literals",
+    "koa.js",
+    "template",
+    "engine"
+  ],
+  "author": "Globalik Slivov <globalikslivov@gmail.com> (https://github.com/Globik)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Globik/koa-render/issues"
+  },
+  "homepage": "https://github.com/Globik/koa-render#readme"
+}
