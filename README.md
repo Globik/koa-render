@@ -1,4 +1,4 @@
-# koa-render
+# koa-rend
 A light-weight and fast template engine for Koa.js based on vanilla es6 template literals.
 Each javascript file in a `views` direcory is a module on its own. Why not? The fact that
 
@@ -33,7 +33,7 @@ Low level api, it's all up to you.
 
 ## Installation
 
-`npm install koa-render`
+`npm install koa-rend`
 As a dpenendency
 `npm install reloadjs`
 It needs for a file hot-reloading after some changes. As modules are in chash(in memory). Hot reloading works optional.
@@ -43,7 +43,7 @@ It needs for a file hot-reloading after some changes. As modules are in chash(in
 ```javascript
 const Koa = require('koa');
 const Router=require('koa-router');
-const render = require('koa-render');
+const render = require('koa-rend');
 
 const app = new Koa();
 const router = new Router();

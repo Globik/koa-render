@@ -1,5 +1,5 @@
 const Koa=require('koa');
-const render=require('koa-render');
+const render=require('koa-rend');
 const koaBody=require('koa-body');
 const serve=require('koa-static');
 const Router=require('koa-router');
