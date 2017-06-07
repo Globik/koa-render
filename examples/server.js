@@ -1,10 +1,8 @@
-//const Koa=require('koa');
-//const render=require('koa-render');
-const Koa=require('../../koa/node_modules/koa');
-const render=require('../../alikon/libs/render.js');
-const koaBody=require('../../koa/node_modules/koa-body');
-const serve=require('../../alikon/node_modules/koa-static');
-const Router=require('../../koa/node_modules/koa-router');
+const Koa=require('koa');
+const render=require('koa-render');
+const koaBody=require('koa-body');
+const serve=require('koa-static');
+const Router=require('koa-router');
 
 const app=new Koa()
 const router=new Router()
