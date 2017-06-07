@@ -255,7 +255,7 @@ console.log(data.info);
 ```
 # Examples
 
-[Examples](https://github.com/Globik/koa-render)
+[Examples](https://github.com/Globik/koa-render/tree/master/examples)
 
 Also see a real world [example](https://github.com/Globik/alikon/tree/master/views)
 
@@ -265,32 +265,3 @@ Also see a real world [example](https://github.com/Globik/alikon/tree/master/vie
 - no highlighting for html template literals syntax in a most well known code editors. Just one color.
 - some times hot reloading works not correctly. It's a bug. One need rechange the file.
 - no layout support.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
