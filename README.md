@@ -27,16 +27,18 @@ router.get('/', async ctx = > {
 ctx.body = ctx.render('main_page', {name: 'world'})
 }
 ```
-No more react.js, handelbars, ejs.js, babel.js, coffescript and other shizophreny on a server side, no more parsers and strange lexic. 
-Pure javascript. Native ES6 template literal syntax. Works good with kao.js v1, v2. More flexibility, more custom behavor.
+ Works good with kao.js v1, v2. More flexibility, more custom behavor.
 Low level api, it's all up to you.
 
 ## Installation
 
 `npm install koa-rend`
+
 As a dpenendency
+
 `npm install reloadjs`
-It needs for a file hot-reloading after some changes. As modules are in chash(in memory). Hot reloading works optional.
+
+Reloadjs.js is for a hot-reloading of files. With no server restart. Hot reloading works if option `development:true`.
 
 # Server example
 
@@ -47,7 +49,8 @@ const render = require('koa-rend');
 
 const app = new Koa();
 const router = new Router();
-
+// root - directory of templating files
+// development if true reloadjs.js will work, others will not work
 render(app,{root:'views', development: true})
 
 app.use(async (ctx, next) = > {
@@ -62,6 +65,8 @@ await next()
 
 router.get('/', async ctx = > {
 const name = 'world';
+
+// ctx.render(file_name,{...variables})
 //render the main_page.js from the views directory
 ctx.body = ctx.render('main_page', {name: name})
 })
