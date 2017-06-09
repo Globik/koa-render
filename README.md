@@ -1,7 +1,8 @@
 # koa-rend
+[![NPM version](http://img.shields.io/npm/v/koa-rend.svg?style=flat)](https://npmjs.org/package/koa-rend) 
 [![NPM Downloads](https://img.shields.io/npm/dm/koa-rend.svg?style=flat)](https://npmjs.org/package/koa-rend)
 
-A light-weight and fast template engine for Koa.js based on vanilla es6 template literals.
+A light-weight template engine for Koa.js based on vanilla es6 template literals.
 Each javascript file in a `views` direcory is a module on its own. Why not? The fact that
 
 ```javascript
@@ -35,12 +36,8 @@ Low level api, it's all up to you.
 ## Installation
 
 `npm install koa-rend`
-
-As a dpenendency
-
-`npm install reloadjs`
-
-Reloadjs.js is for a hot-reloading of files. With no server restart. Hot reloading works if option `development:true`.
+Under the hood koa-rend uses `reloadjs.js` as a hot-reloading solution with no server restart. 
+To enable hot-reloading please set `development:true` in options. In a production stage please set to false.
 
 # Server example
 
