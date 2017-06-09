@@ -5,12 +5,13 @@ const reload=require('reloadjs');
 var mama;
 function vov(ms, pleva){
 fs.readdirSync(`./${ms}`).forEach(filename=> {
+if(path.extname(filename)==='.js'){
 if(pleva){	
 mama=reload(path.resolve(`${ms}/${filename}`));}
 else{
 mama=require(path.resolve(`${ms}/${filename}`))}
 map.set(filename,mama);
-});
+}});
 }
 module.exports=(app,settings={})=>{
 if(app.context.render){return;}

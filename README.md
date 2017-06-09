@@ -1,4 +1,6 @@
 # koa-rend
+[![NPM Downloads](https://img.shields.io/npm/dm/koa-rend.svg?style=flat)](https://npmjs.org/package/koa-rend)
+
 A light-weight and fast template engine for Koa.js based on vanilla es6 template literals.
 Each javascript file in a `views` direcory is a module on its own. Why not? The fact that
 
@@ -95,10 +97,9 @@ module.exports = {main_page}
 ```
 ## Options
 1. root - it's a root directory where are our templating javascript files. `views` or any other.
-2. development - true or false. Default false.
+2. development - true or false. hotreloadjs.js will work if true. Default false.
 Under the hood koa-render uses `reloadjs.js` for hot-reloading with no need server to restart. Reloadjs.js listen to the directory of root folder.
-Nested directories koa-render does not support. Only flat files in one directory. Only hardcore. Advantage is that the files are all in one place.
-No need to jamp from directory to directory.
+Nested directories koa-rend does not support. Support onlye .js extension files.
 
 ## Naming convention
 
@@ -108,7 +109,7 @@ So in a `views` directory just for example
 `- admin_articles.js
 - admin_dashboard.js
 - user_dashboard.js
-- user_whatelse.js
+- README
 etc
 `
 
