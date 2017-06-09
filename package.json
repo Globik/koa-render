@@ -1,6 +1,6 @@
 {
   "name": "koa-rend",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Light-weight template engine for koa.js based on ES6 template literals",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,10 @@
   "engines": {
     "node": ">=7.10.0"
   },
-  "dependencies": {"reloadjs":"0.0.2"},
-  "devDepenencies": { },
+  "dependencies": {
+    "reloadjs": "0.0.2"
+  },
+  "devDepenencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Globik/koa-render.git"
