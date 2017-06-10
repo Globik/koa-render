@@ -1,7 +1,7 @@
 const fs=require('fs');
 const path=require('path');
 const map=new Map();
-const reload=require('reloadjs');
+const reload=require('hotreloader');
 var mama;
 function vov(ms, pleva){
 fs.readdirSync(`./${ms}`).forEach(filename=> {
