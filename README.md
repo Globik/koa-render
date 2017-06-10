@@ -36,7 +36,7 @@ Low level api, it's all up to you.
 ## Installation
 
 `npm install koa-rend`
-Under the hood koa-rend uses `reloadjs.js` as a hot-reloading solution with no server restart. 
+Under the hood koa-rend uses [hotreloader.js](https://github.com/Globik/hotreloader) as a hot-reloading solution with no need the server restart. 
 To enable hot-reloading please set `development:true` in options. In a production stage please set to false.
 
 # Server example
