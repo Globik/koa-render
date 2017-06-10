@@ -95,7 +95,7 @@ module.exports = {main_page}
 ## Options
 1. root - it's a root directory where are our templating javascript files. `views` or any other.
 2. development - true or false. hotreloader.js would work if true. Default false.
-Under the hood koa-render uses `hotreloader.js` for hot-reloading with no need server to restart. Reloadjs.js listen to the directory of root folder.
+Under the hood koa-render uses `hotreloader.js` for hot-reloading with no need server to restart. `hoteloader.js` listen to the directory of root folder.
 Nested directories koa-rend does not support. Support only `.js` extension files.
 
 ## Naming convention
