@@ -49,7 +49,7 @@ const render = require('koa-rend');
 const app = new Koa();
 const router = new Router();
 // root - directory of templating files
-// development if true reloadjs.js will work, others will not work
+// development if true hotreloader.js will work, others will not work
 render(app,{root:'views', development: true})
 
 app.use(async (ctx, next) = > {
@@ -94,9 +94,9 @@ module.exports = {main_page}
 ```
 ## Options
 1. root - it's a root directory where are our templating javascript files. `views` or any other.
-2. development - true or false. hotreloadjs.js will work if true. Default false.
-Under the hood koa-render uses `reloadjs.js` for hot-reloading with no need server to restart. Reloadjs.js listen to the directory of root folder.
-Nested directories koa-rend does not support. Support onlye .js extension files.
+2. development - true or false. hotreloader.js would work if true. Default false.
+Under the hood koa-render uses `hotreloader.js` for hot-reloading with no need server to restart. Reloadjs.js listen to the directory of root folder.
+Nested directories koa-rend does not support. Support only `.js` extension files.
 
 ## Naming convention
 
