@@ -24,7 +24,7 @@ var html;
 try{	
 html=ender(v,context);
 } catch(err){
-html=ender('footer',{fuck:err,file:v,stack:err.stack});
+html=errshow({ferr:err,file:v,stack:err.stack});
 }
 return html;}
 }
