@@ -1,7 +1,7 @@
 const Koa=require('koa');
 const render=require('koa-rend');
 const koaBody=require('koa-body');
-const serve=require('koa-static');
+const serve=require('../../koa/node_modules/koa-static');
 const Router=require('koa-router');
 
 const app=new Koa()
@@ -17,15 +17,15 @@ await next()
 var user={id:1, name: 'Globik', member: true}
 var str='world';
 router.get('/', async ctx=>{
-ctx.body=ctx.render('main_page',{str: str})
+ctx.body=await ctx.render('main_page',{str: str})
 })
 
 router.get('/user', async ctx=>{
-ctx.body=ctx.render('user',{user: user})
+ctx.body=await ctx.render('user',{user: user})
 })
 
 router.post('/hello_vidget', async ctx=>{
-ctx.body={info:"OK", content: ctx.render('hello_vidget',{user: user})}
+ctx.body={info:"OK", content: await ctx.render('hello_vidget',{user: user})}
 })
 app.use(router.routes()).use(router.allowedMethods())
 app.listen(5000)

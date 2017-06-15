@@ -27,10 +27,10 @@ module.exports = {main_page}
 // and then in a router:
 
 router.get('/', async ctx = > {
-ctx.body = ctx.render('main_page', {name: 'world'})
+ctx.body = await ctx.render('main_page', {name: 'world'})
 }
 ```
- Works good with kao.js v1, v2. More flexibility, more custom behavor.
+ Works good with ~~kao.js v1~~, v2. More flexibility, more custom behavor.
 Low level api, it's all up to you.
 
 ## Installation
@@ -67,7 +67,7 @@ const name = 'world';
 
 // ctx.render(file_name,{...variables})
 //render the main_page.js from the views directory
-ctx.body = ctx.render('main_page', {name: name})
+ctx.body = await ctx.render('main_page', {name: name})
 })
 
 app.use(router.routes()).use(router.allowedMethods())
@@ -117,7 +117,7 @@ const admin_articles = n => {return `blah blah blah`}
 
 module.exports = {admin_articles}
 
-ctx.render('admin_articles', {})
+await ctx.render('admin_articles', {})
 ```
 ## Hot-reloading
 
@@ -241,7 +241,7 @@ module.exports = {vidget_hello_world}
 
 router.post('/get_date_vidget', async ctx = > {
 var date = new Date();
-ctx.body = {info: "OK", content: ctx.render('vidget_hello_world',{date: date})}
+ctx.body = {info: "OK", content: await ctx.render('vidget_hello_world',{date: date})}
 })
 
 // on a client side the ajax post-call to '/get_date_vidget':

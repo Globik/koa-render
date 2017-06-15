@@ -17,16 +17,17 @@ module.exports=(app,settings={})=>{
 if(app.context.render){return;}
 if (!settings || !settings.root) {throw new Error('settings.root required');}
 vov(settings.root, settings.development)
-app.context.render=function(v,_context){
+app.context.render=async function(v,_context){
 var context = {};
 Object.assign(context,this.state,_context);
-var html;
-try{	
-html=ender(v,context);
-} catch(err){
-html=errshow({ferr:err,file:v,stack:err.stack});
+var html=await guru(v,context);
+return html;
 }
-return html;}
+}
+function guru(v,context){
+return new Promise((res,rej)=>{
+try{res(ender(v,context))}catch(err){res(errshow({ferr:err,file:v,stack:err.stack}))}
+})
 }
 
 function ender(v,ops){

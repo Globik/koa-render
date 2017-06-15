@@ -7,17 +7,18 @@
     "test": "npm test"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=7.10.0"
   },
   "dependencies": {
     "koa": ">=2.0.0",
     "koa-static": "3.0.0",
     "koa-router": "7.2.0",
-    "koa-rend": "0.2.5",
-    "koa-body": "2.0.1"
+    "koa-body": "2.0.1",
+   "hotreloader":"1.0.2",
+"module-invalidate-2":"1.0.0"
   },
   "devDepenencies": {
-    "reloadjs": "0.0.2"
+    
   },
   "repository": {
     "type": "git",
