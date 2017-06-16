@@ -23,22 +23,22 @@ ${head.head({title:'user page'})}
 function get_user(){
 var xhr=new XMLHttpRequest();
 xhr.open('post','/hello_vidgeta');
-//xhr.setRequestHeader('Content-Type','application/json','utf-8');
+xhr.setRequestHeader('Content-Type','application/json','utf-8');
 xhr.onload=function(ev){
 if(xhr.status==200){
-alert(this.response);
-/*
+//alert(this.response);
+
 var json=JSON.parse(this.response);
 content.innerHTML=json.content;
 console.log(json.info);
-*/
+
 }else{console.warn(this.response);}
 }
 xhr.onerror=function(e){console.log(e);}
 var ata={};
 ata.hello="hello";
-//xhr.send(ata);
-xhr.send();
+xhr.send(ata);
+//xhr.send();
 }
 </script>
 <footer>
