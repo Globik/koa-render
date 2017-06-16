@@ -10,7 +10,7 @@
     "node": ">=7.10.0"
   },
   "dependencies": {
-    "hotreloader": "1.0.3"
+    "hotreloader": "1.0.4"
   },
   "devDepenencies": {},
   "repository": {
