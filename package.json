@@ -1,6 +1,6 @@
 {
   "name": "koa-rend",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Light-weight template engine for koa.js based on ES6 template literals",
   "main": "index.js",
   "scripts": {
